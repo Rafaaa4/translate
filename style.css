@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #eaeaea; /* Optional: background color for body */
+}
+
+.container {
+  display: flex; /* Enable flexbox for child elements */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%; /* Allow the container to be responsive */
+  margin: auto; /* Centers the container horizontally */
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100%;
+}
+
+/* Text Input Areas */
+.text-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Row Style */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Language Select Dropdowns */
+select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Icon Styles */
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons i {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icons i:hover {
+  color: #2a9d8f;
+}
+
+/* Exchange Icon */
+.exchange i {
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.exchange i:hover {
+  color: #2a9d8f;
+  transform: rotate(180deg);
+}
+
+/* Translate Button */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2a9d8f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #21867a;
+}

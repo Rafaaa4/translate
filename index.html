@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingual Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="container">
+<div class="werapper">
+  <div class="text-input">
+    <textarea class="from-text" id="from-text" placeholder="Enter text"></textarea>
+    <textarea class="from-to" id="from-to" readonly disabled placeholder="translation"></textarea>
+  </div>
+  <ul class="controls">
+    <li class="row from">
+      <div class="icons">
+        <i class='bx bx-volume-full' onclick="speak()"></i>
+        <i class='bx bx-copy' onclick="copyText('from-text')" ></i>
+      </div>
+      <select class="select" id="">
+        
+      </select>
+    </li>
+    <li class="exchange" >
+      <i class='bx bx-reflect-vertical'id="exchange" ></i>
+    </li>
+    <li class="row to">  
+      <select class="select" id="">
+      </select>
+      <div class="icons">
+        <i class='bx bx-volume-full' onclick="speak1()"></i>
+        <i class='bx bx-copy' onclick="copyText('from-to')" ></i>
+      </div>
+
+    </li>
+  </ul>
+</div>
+<button>translate</button>
+</div>
+<script src="main.js"></script>
+<script src="countries.js"></script>
+</body>
+</html>
